@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <title>Haydon Curteis-Lateo</title>
+</head>
+<body>
+
+  <a class="top scroll" href="#top"><i class="fa fa-arrow-up fa-1x" aria-hidden="true"></i></a>
+
+  <div id="top"></div>
+
+  <div class="landing-page">
+    <div class="building">
+      <h1>Sorry but this website is still currently being built</h1>
+      <h3>You can still take a look at a brief description about me</h3>
+    </div>
+    <div class="button-about">
+      <a class="scroll" href="#about">About Me</a>
+    </div>
+  </div>
+
+
+<div id="about"></div>
+  <div class="about-page">
+
+    <div class="about-section">
+      <div class="text">
+        <p>Non tempor proident ullamco in veniam nescius mandaremus ex deserunt summis
+          nescius ullamco a dolore consequat te quis fugiat. Senserit quae ubi litteris
+          comprehenderit. Do excepteur aut senserit, enim litteris quo veniam noster,
+          cernantur eram fabulas senserit non quid fabulas sempiternum. Enim sempiternum
+          ullamco culpa singulis do ea velit cernantur commodo, voluptate do esse
+          singulis, quis a voluptate in velit do quorum si eu quem laboris ita ex quo
+          magna laborum, magna ex se multos doctrina, non si export appellat.Ut est
+          arbitrantur quo cillum expetendis a noster culpa ab singulis minim incididunt,
+          quis ingeniis qui cupidatat ubi quibusdam se culpa te quamquam hic cillum
+          proident, ut tamen nescius iudicem hic nostrud nulla an aliquip instituendarum.
+          Expetendis et legam deserunt, tamen admodum o arbitror, ab illum se quis,
+          arbitror amet laboris admodum eu proident id ullamco, amet ullamco ex duis
+          legam, pariatur quis possumus, sed sed illum aliquip. Singulis dolore ullamco
+          occaecat, duis senserit est offendit, offendit ipsum cillum admodum dolor ex
+          minim an iis veniam arbitror. Ita ea quem sunt cillum.</p>
+      </div>
+      <div class="name">
+        <p>Haydon Curteis-Lateo</p>
+      </div>
+      <!-- <div class="image-about">
+         <img class="image" src="img\portrait.jpeg" alt="portrait">
+      </div> -->
+    </div>
+
+      <div class="contact-btn">
+        <a class="scroll" href="#contact">Contact Me</a>
+      </div>
+  </div>
+
+  <div id="contact"></div>
+  <div class="contact-page">
+    <!-- <div class="contact-me">
+      <h1>Contact</h1>
+    </div> -->
+
+    <!-- <div class="contact-section">
+
+      <form action="">
+
+        <input type="text" id="fname" name="fulltname" placeholder="Name *">
+
+        <input type="text" id="email" name="email" placeholder="Email *">
+
+        <input type="text" id="subject" name="subject" placeholder="Subject">
+
+        <textarea name="message" id="message" placeholder="Message *" style="height: 150px; max-width: 100%;"></textarea>
+
+        <input type="submit" value="Send">
+
+      </form>
+
+    </div> -->
+
+      <a class="contact-details" href="mailto:haydon.curteis-lateo@outlook.com?Subject=Website"  target="_top"><h1>haydon.curteis-lateo@outlook.com</h1></a>
+
+  </div>
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  <script>
+  $(document).ready(function() {
+
+     var scrollLink = $('.scroll');
+
+     //smooth scrolling
+     scrollLink.click(function(e) {
+       e.preventDefault();
+       $('body,html').animate({scrollTop: $(this.hash).offset().top}, 1000);
+     });
+   });
+</script>
+
+</body>
+</html>
