@@ -22,10 +22,10 @@
         <ul>
 
         <li class="home-mobile" ><a class="scroll" href="#home">Home</a></li>
-        <li class="about-mobile" ><a class="scroll" href="#about"></i>About</a></li>
-        <li class="prices-mobile" ><a class="scroll" href="#prices"></i>Prices</a></li>
+        <li class="about-mobile" ><a class="scroll" href="#about">About</a></li>
+        <li class="prices-mobile" ><a class="scroll" href="#prices">Prices</a></li>
         <li class="testimonials-mobile" ><a class="scroll" href="#testimonials"></i>Testimonials</a></li>
-        <li class="contact-mobile" ><a class="scroll" href="#contact"></i>Contact</a></li>
+        <li class="contact-mobile" ><a class="scroll" href="#contact">Contact</a></li>
 
         </ul>
       </div>
@@ -211,6 +211,12 @@
           $('body').delay(240).removeClass('no-scrolling', 100);
       })
       $('.mobile-navigation').click(function(){
+          $('.icon').removeClass('active');
+          $('.mobile-navigation').delay(60).removeClass('mobile-navigation--open', 100);
+          $('.over-hang').delay(40).removeClass('over-hang-open', 50);
+          $('body').delay(40).removeClass('no-scrolling', 50);
+      })
+      $('.logo').click(function(){
           $('.icon').removeClass('active');
           $('.mobile-navigation').delay(60).removeClass('mobile-navigation--open', 100);
           $('.over-hang').delay(40).removeClass('over-hang-open', 50);
