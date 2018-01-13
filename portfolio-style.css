@@ -1,6 +1,3 @@
-body {
-  overflow: hidden;
-}
 
 /*Portfolio Page*/
 
@@ -15,7 +12,7 @@ body {
 
 .go-back {
   position: fixed;
-  top: 0;
+  top: 25px;
   left: 0;
   color: white;
   background-color: black;
@@ -44,146 +41,108 @@ body {
   width: 100%;
 }
 
-.moveDown {
-  text-align: center;
-}
-
-.moveDown a {
-  border: 1px solid black;
-  color: black;
-  text-decoration: none;
-  padding: 1em 2em;
-  transition: .2s ease-in-out;
-}
-
-.moveDown a:hover,
-.moveDown a:focus {
-  color: white;
-  background-color: black;
-}
-
-/*Version 1*/
-
-.portfolio-v1 {
-  background-color: rgb(140, 140, 140);
-	width: 100%;
+.websites {
   height: 50%;
-  margin-bottom: 30px;
-}
-
-.v1-img {
-  display: none;
-  width: 50%;
-  height: 100%;
-  float: right;
-  background-image: url(portfolio/templates/v1/img/landing-page.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.iframe {
-  float: right;
-}
-
-iframe.noScrolling {
-  height: 100%;
-  width: 50%;
-  overflow: hidden;
-}
-
-.portfolio-content {
-  width: 50%;
-  height: 100%;
-  float: left;
+  background-color: black;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
 }
 
-.portfolio-v1 h1 {
-  margin: 10px;
-  padding: 0 1em;
+.websites a {
   text-align: center;
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
-  color: white;
-  font-size: 3vw;
-}
-
-.portfolio-v1 p {
-  text-align: center;
-  font-size: 1em;
-  margin: 20px;
-}
-
-.portfolio-content a {
-  margin: auto;
-  margin: 10px;
-  background-color: white;
-  padding: .8em 1.8em;
-  color: black;
   text-decoration: none;
-  border: 2px solid black;
+  background-image: url(portfolio/templates/img/websites-normal.jpeg);
+  background-position: center;
+  background-size: cover;
+  font-size: 400%;
+  padding: 13vh 0;
+  color: white;
+  transition: 0.25s ease-in-out;
 }
 
-.portfolio-content a:hover,
-.portfolio-content a:focus {
-  background-color: black;
-  border: 2px solid white;
-  color: white;
+.websites a:hover,
+.websites a:focus {
+  background-image: url(portfolio/templates/img/websites-hover.jpg);
+  color: black;
   text-decoration: underline;
 }
 
-/*Version 2*/
-
-.portfolio-v2 {
-  margin-top: 30px;
-  background-color: rgb(140, 140, 140);
-	width: 100%;
+.coming-soon {
   height: 50%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+
+.coming-soon a {
+  text-align: center;
+  text-decoration: none;
+  background-image: url(portfolio/templates/img/coming-soon-normal.jpeg);
+  background-position: center;
+  background-size: cover;
+  font-size: 400%;
+  padding: 13vh 0;
+  color: white;
+  transition: 0.25s ease-in-out;
+}
+
+.coming-soon a:hover,
+.coming-soon a:focus {
+  background-image: url(portfolio/templates/img/coming-soon-hover.jpg);
+  color: black;
+  text-decoration: underline;
+}
+
 
 /*Media Queries*/
 
+/*Google Nexus 7 Specific*/
+
+@media(max-height:600px) {
+  .websites a{
+    padding: 10vh 0;
+}
+
+.coming-soon a{
+  padding: 10vh 0;
+}
+}
+
+/*Other Width Media Queries*/
+
+@media(max-width: 1280px) {
+
+  .coming-soon a:hover,
+  .coming-soon a:focus {
+    color: rgb(4, 135, 123);
+  }
+}
+
 @media(max-width: 960px) {
-  .v1-img {
-    display: block;
-  }
-  iframe {
-    display: none;
-  }
 }
 
 @media(max-width: 760px ) {
-  .portfolio-v1 p {
-    font-size: .9em;
-  }
-  .portfolio-content a {
-    padding: .3em .5em;
-  }
+  .websites a{
+    font-size: 200%;
+ }
+
+ .coming-soon a{
+    font-size: 200%;
+ }
 }
 
-@media(max-width: 400px) {
-  .portfolio-v1 p {
-    font-size: .8em;
-      margin: 5px;
+@media(max-width: 450px) {
+  .go-back {
+    position: static;
+    order: 0;
+    align-self: center;
   }
-  .portfolio-content a {
-    padding: .2em .3em;
+  .portfolio-h1 {
+  	order: -1;
   }
 }
 
 @media(max-width: 340px) {
-  .portfolio-v1 h1 {
-    margin: 10px;
-    font-size: 5vw;
-  }
-  .portfolio-v1 p {
-    font-size: .7em;
-  }
-  .portfolio-content a {
-    padding: .2em .3em;
-  }
 }

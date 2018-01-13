@@ -1,0 +1,252 @@
+body {
+  overflow: hidden;
+  width: 100%;
+}
+
+/*website Page*/
+
+.website-page {
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.go-back {
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: white;
+  background-color: black;
+  text-decoration: none;
+  margin: 15px;
+  align-self: start;
+  border: 1px solid black;
+  padding: 0.3em 1.3em;
+  transition: .2s ease-in-out;
+}
+
+.go-back:hover,
+.go-back:focus {
+  color: black;
+  background-color: white;
+}
+
+.website-h1 {
+	background-color: black;
+  color: white;
+	padding: .3em 1.3em;
+}
+
+.website-section {
+  height: 100%;
+  width: 100%;
+}
+
+.next-v {
+  text-align: center;
+}
+
+.next-v a {
+  border: 1px solid black;
+  color: black;
+  text-decoration: none;
+  padding: 1em 2em;
+  transition: .2s ease-in-out;
+}
+
+.next-v a:hover,
+.next-v a:focus {
+  color: white;
+  background-color: black;
+}
+
+/*Version 1*/
+
+.website-v1 {
+  background-color: rgb(140, 140, 140);
+	width: 100%;
+  height: 50%;
+  margin-bottom: 30px;
+}
+
+.v1-img {
+  width: 50%;
+  height: 100%;
+  float: right;
+  background-image: url(v1/img/landing-page.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.website-content {
+  width: 50%;
+  height: 100%;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.website-v1 h1 {
+  margin: 10px;
+  padding: 0 1em;
+  text-align: center;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  color: white;
+  font-size: 3vw;
+}
+
+.website-v1 p {
+  text-align: center;
+  font-size: 1em;
+  margin: 20px;
+}
+
+.v1-links {
+  margin: 20px;
+}
+
+.v1-demo {
+  margin: 10px;
+  background-color: white;
+  padding: .8em 1.8em;
+  color: black;
+  text-decoration: none;
+  border: 2px solid black;
+}
+
+.v1-demo:hover,
+.v1-demo:focus {
+  background-color: black;
+  border: 2px solid white;
+  color: white;
+  text-decoration: underline;
+}
+
+.v1-download {
+  margin: 10px;
+  background-color: white;
+  padding: .8em 1.8em;
+  color: black;
+  text-decoration: none;
+  border: 2px solid black;
+}
+
+.v1-download:hover,
+.v1-download:focus {
+  background-color: black;
+  border: 2px solid white;
+  color: white;
+  text-decoration: underline;
+}
+
+/*Version 2*/
+
+.website-v2 {
+  margin-top: 30px;
+  background-color: rgb(140, 140, 140);
+	width: 100%;
+  height: 50%;
+}
+
+/*Media Queries*/
+
+@media(max-width: 960px) {
+}
+
+@media(max-width: 760px ) {
+  .website-v1 p {
+    font-size: .9em;
+  }
+}
+
+@media(max-width: 450px) {
+  .go-back {
+    position: static;
+    order: 0;
+    align-self: center;
+  }
+  .website-h1 {
+    order: -1;
+  }
+
+  .website-v1 h1 {
+    font-size: 5vw;
+  }
+  .website-v1 p {
+    margin: 5px;
+  }
+
+  .v1-links {
+    margin: 0;
+  }
+
+  .v1-demo {
+    margin: 5px;
+    padding: .2em .3em;
+    display: block;
+  }
+
+  .v1-download {
+    margin: 5px;
+    display: block;
+    padding: .2em .3em;
+  }
+}
+
+@media(max-width: 400px) {
+  .website-v1 h1 {
+    font-size: 5vw;
+    margin: 0;
+  }
+  .website-v1 p {
+    font-size: .8em;
+    margin: 5px;
+  }
+}
+
+@media(max-width: 340px) {
+  .website-v1 h1 {
+    margin: 10px;
+    font-size: 5vw;
+  }
+  .website-v1 p {
+    font-size: .7em;
+  }
+}
+
+@media(max-width: 320px) {
+  .website-v1 h1 {
+    margin: 5px;
+    font-size: 4vw;
+  }
+
+  .website-content p {
+    margin: 1px;
+  }
+
+  .v1-links {
+    margin: 0;
+  }
+
+  .v1-demo {
+    margin: 1px;
+    padding: 1px;
+    display: block;
+    font-size: 13px;
+  }
+
+  .v1-download {
+    margin: 1px;
+    display: block;
+    padding: 1px;
+    font-size: 13px;
+  }
+}
