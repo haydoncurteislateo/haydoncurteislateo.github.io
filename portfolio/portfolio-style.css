@@ -52,7 +52,7 @@
 .websites a {
   text-align: center;
   text-decoration: none;
-  background-image: url(portfolio/templates/img/websites-normal.jpeg);
+  background-image: url(templates/img/websites-normal.jpg);
   background-position: center;
   background-size: cover;
   font-size: 400%;
@@ -63,7 +63,7 @@
 
 .websites a:hover,
 .websites a:focus {
-  background-image: url(portfolio/templates/img/websites-hover.jpg);
+  background-image: url(templates/img/websites-hover.jpg);
   color: black;
   text-decoration: underline;
 }
@@ -79,7 +79,7 @@
 .coming-soon a {
   text-align: center;
   text-decoration: none;
-  background-image: url(portfolio/templates/img/coming-soon-normal.jpeg);
+  background-image: url(templates/img/coming-soon-normal.jpg);
   background-position: center;
   background-size: cover;
   font-size: 400%;
@@ -90,7 +90,7 @@
 
 .coming-soon a:hover,
 .coming-soon a:focus {
-  background-image: url(portfolio/templates/img/coming-soon-hover.jpg);
+  background-image: url(templates/img/coming-soon-hover.jpg);
   color: black;
   text-decoration: underline;
 }
