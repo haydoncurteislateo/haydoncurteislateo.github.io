@@ -4,15 +4,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/style-reset.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
   <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
   <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
   <title>Haydon Curteis-Lateo | Portfolio</title>
 </head>
 <body>
+  <div class="preLoader" id="preLoader">
+    <div class="loader" id="loader"></div>
+  </div>
+  <div id="scrollHome"></div>
   <div class="landingScreen" id="landingScreen">
     <h1 class="landingScreenName" id="landingScreenName">Haydon Curteis-Lateo</h1>
+    <div class="scroll">
+      <h4 id="scroll" class="scrollH4">Scroll</h4>
+      <a id="scrollDown" href="#portfolioStart">
+        <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0h24v24H0V0z" fill="none"/>
+            <path id="scrollArrow" class="scrollArrow" d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z" fill="#010101"/>
+        </svg>
+      </a>
+    </div>
   </div>
+  <header class="headerNavigation" id="headerNavigation">
+    <a href="#" class="showMenu" id="showMenu"><i class="material-icons openNav">menu</i></a>
+    <a href="#" class="hideMenu" id="hideMenu"><i class="material-icons closeNav">close</i></a>
+    <nav id="navigation">
+      <a class="scrollTo activeHome" href="#scrollHome">Home</a>
+      <a class="scrollTo activeProjects" href="#scrollProjects">Projects</a>
+      <a class="scrollTo activeAbout" href="#scrollAbout">About</a>
+      <a class="scrollTo activeContact" href="#scrollContact">Contact</a>
+      <a class="scrollTo activeSkills" href="#scrollSkills">Skills</a>
+    </nav>
+  </header>
+  <div id="scrollProjects"></div>
   <div class="portfolio" id="portfolio">
     <div class="portfolioIntro" id="portfolioIntro">
       <h1 class="portfolioHeader">Projects</h1>
@@ -58,16 +85,13 @@
       </div>
     </div>
   </div>
+  <div id="scrollAbout"></div>
   <div class="about" id ="about">
-    <div class="aboutHeader" id="aboutHeader">
-      <h1 class="aboutHeading">About Me
-        <div class="aboutBackground" id="aboutBackground"></div>
-      </h1>
-    </div>
     <div class="aboutContainer" id="aboutContainer">
       <img class="aboutPortrait" src="images/portrait2.png" alt="">
       <div class="aboutText">
-        <p>Hi! I live in the City of Wells, I spend all of my spare time trying to progress my career in ICT.</p>
+        <h1 class="aboutHeading">About Me</h1>
+        <p>Hi! I live in Somerset, I spend all of my spare time trying to progress my career in ICT.</p>
         <p>I'm currently studying Level 3 ICT at Strode College.</p>
         <p>Once I finish education I would like to work my way up to be a full stack developer.</p>
         <p>I am looking for all the expirence I can get, so if you are looking for a website or know anyone please contact me by my email.</p>
@@ -81,6 +105,7 @@
           </svg>
         </span><p>Haydon Curteis-Lateo‍</p>
     </div>
+    <div id="scrollContact"></div>
     <div class="contactContainer">
       <div class="contact">
         <div class="contactEmail">
@@ -122,6 +147,7 @@
       </div>
       </div>
     </div>
+    <div id="scrollSkills"></div>
     <div class="skills">
       <h1>Skills</h1>
       <hr>
