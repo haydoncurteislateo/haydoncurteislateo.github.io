@@ -587,6 +587,7 @@ nav a:hover {
 .skillImage {
 width: 100px;
 opacity: 0.5;
+filter: grayscale(1);
 }
 /* About Finish */
 /* Contact Start */

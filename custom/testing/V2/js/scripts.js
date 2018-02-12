@@ -26,6 +26,8 @@ $(document).ready(function() {
   var scrollN;
   var $scroll;
   var didScroll = false;
+  var skillsLoc = $('#skills').offset().top;
+  var skillsHeight = $('#skills').outerHeight();
   var projectHeightValue = $("#projectExample1").height();
   var landingScreenHeight = $("#landingScreen").outerHeight();
   var landingScreenLocBottom = $("#landingScreen").offset().top + landingScreenHeight;
@@ -35,7 +37,7 @@ $(document).ready(function() {
 
   $(window).scroll(function(){
     scroll = $(window).scrollTop();
-    scrollN = (scroll+skillsHeight)+500;
+    scrollN = (scroll+skillsHeight)+100;
     $scroll = $(window).scrollTop() + projectHeightValue;
     didScroll = true;
   });
@@ -65,6 +67,50 @@ $(document).ready(function() {
       }
     }
   }, 500);
+
+  // Skills up and down on entering view
+  var skillBars = [];
+  var skillValues = [];
+  var skillImages = [];
+  for (var s = 1; s < 4; s++) {
+    skillBars[s]=$('#skillBar'+s);
+    skillValues[s]=$('#skillValue'+s);
+    skillImages[s]=$('#skillImage'+s);
+  }
+  var skillCounterRun = true;
+
+  function skills() {
+      if (skillCounterRun) {
+        skillCounterRun = false;
+        var skillCount1 = 0;
+          var skillCounter1 = setInterval(function(){
+              if (skillCount1 == 100) clearInterval(skillCounter1);
+              skillValues[1].text(skillCount1+'%');
+              skillCount1++;
+          },
+          1);
+        var skillCount2 = 0;
+          var skillCounter2 = setInterval(function(){
+              if (skillCount2 == 100) clearInterval(skillCounter2);
+              skillValues[2].text(skillCount2+'%');
+              skillCount2++;
+          },
+          1);
+        var skillCount3 = 0;
+          var skillCounter3 = setInterval(function(){
+              if (skillCount3 == 25) clearInterval(skillCounter3);
+              skillValues[3].text(skillCount3+'%');
+              skillCount3++;
+          },
+          15);
+    }
+    skillBars[1].animate({'width':'100%'}, 1600);
+    skillImages[1].animate({'opacity':'1'},1000);
+    skillBars[2].animate({'width':'100%'}, 1600);
+    skillImages[2].animate({'opacity':'1'},1000);
+    skillBars[3].animate({'width':'25%'}, 1000);
+    skillImages[3].animate({'opacity':'1'},1000);
+}
 
 
   //Elements revealing
@@ -144,53 +190,6 @@ $(document).ready(function() {
         $('#portfolioIntro').css({'top' : ''+pauseScroll+''});
       }
   });
-
-  // Skills up and down on entering view
-  var skillsLoc = $('#skills').offset().top;
-  var skillsHeight = $('#skills').outerHeight();
-  var skillBars = [];
-  var skillValues = [];
-  var skillImages = [];
-  for (var s = 1; s < 4; s++) {
-    skillBars[s]=$('#skillBar'+i);
-    skillValues[s]=$('#skillValue'+i);
-    skillImages[s]=$('#skillImage'+i);
-  }
-  var skillCounterRun = true;
-
-  function skills() {
-      if (skillCounterRun) {
-        skillCounterRun = false;
-        var skillCount1 = 0;
-          var skillCounter1 = setInterval(function(){
-              if (skillCount1 == 100) clearInterval(skillCounter1);
-              skillValues[1].text(skillCount1+'%');
-              skillCount1++;
-          },
-          1);
-        var skillCount2 = 0;
-          var skillCounter2 = setInterval(function(){
-              if (skillCount2 == 100) clearInterval(skillCounter2);
-              skillValues[2].text(skillCount2+'%');
-              skillCount2++;
-          },
-          1);
-        var skillCount3 = 0;
-          var skillCounter3 = setInterval(function(){
-              if (skillCount3 == 25) clearInterval(skillCounter3);
-              skillValues[3].text(skillCount3+'%');
-              skillCount3++;
-          },
-          15);
-    }
-    skillBars[1].animate({'width':'100%'}, 1600);
-    skillImages[1].animate({'opacity':'1'},1000);
-    skillBars[2].animate({'width':'100%'}, 1600);
-    skillImages[2].animate({'opacity':'1'},1000);
-    skillBars[3].animate({'width':'25%'}, 1000);
-    skillImages[3].animate({'opacity':'1'},1000);
-
-}
 
 var changingNavColor = false;
 var navOpen = false;
