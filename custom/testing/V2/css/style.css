@@ -404,7 +404,6 @@ nav a:hover {
 	background-color: black;
 	margin: 0;
 	padding-top: 10%;
-	padding-bottom: 20%;
 	overflow: hidden;
 }
 /* Heading */
@@ -535,60 +534,6 @@ nav a:hover {
 .linkedIn:focus #linkedIn {
 	fill:rgb(164, 125, 0);
 }
-.skills {
-	width: 80%;
-	display: block;
-	margin: auto;
-}
-.skills h1 {
-	color: white;
-	text-align: center;
-	font-family: Oswald;
-	font-size: 250%;
-}
-.skills hr {
-	width: 15%;
-	color: rgb(255, 255, 255,0.5);
-}
-.skill {
-	position: relative;
-	display: flex;
-	align-items: center;
-	margin: 50px 20px;
-}
-.skills h3 {
-	color: white;
-	display: inline;
-	padding: 1em;
-	font-size: 210%;
-	font-family: RobotoH1;
-}
-.skillBarContainer {
-	width: 80%;
-	height: 100%;
-	display: flex;
-	align-items: center;
-	position: absolute;
-	top: 0;
-	left: 30%;
-}
-.skillBar {
-	background-color: white;
-	height: 25px;
-}
-.skillBarContainer p {
-	color: white;
-	padding-left: 5px;
-}
-.skillBar p {
-	display: none;
-	font-size: 80%;
-}
-.skillImage {
-width: 100px;
-opacity: 0.5;
-filter: grayscale(1);
-}
 /* About Finish */
 /* Contact Start */
 /* Contact Finish */
@@ -598,14 +543,6 @@ filter: grayscale(1);
 @media(max-width: 1430px) {
 	.examples{
 		margin-right: 50px;
-	}
-}
-@media(max-width: 1380px) {
-	.skills {
-		width: 100%;
-	}
-	.skillBarContainer {
-		width: 70%;
 	}
 }
 @media(max-width: 1150px) {
@@ -630,10 +567,6 @@ filter: grayscale(1);
 	.contact {
 		flex-direction: column;
 	}
-	.skillBarContainer {
-		width: 60%;
-		left: 35%;
-	}
 }
 @media(max-width: 1100px) {
   .aboutHeading {
@@ -647,10 +580,6 @@ filter: grayscale(1);
 	.v1 {
 		margin-left: -5vw;
 	}
-	.skillBarContainer {
-		width: 60%;
-		left: 40%;
-	}
 }
 @media(max-width:850px){
 	.example {
@@ -662,16 +591,6 @@ filter: grayscale(1);
   }
 	.name {
 		font-size: 80%;
-	}
-	.skillBarContainer {
-		width: 50%;
-		left: 45%;
-	}
-}
-@media(max-width: 750px) {
-	.skillBarContainer {
-		width: 50%;
-		left: 50%;
 	}
 }
 @media(max-width: 730px) {
@@ -688,33 +607,12 @@ filter: grayscale(1);
 	font-size: 70%;
 }
 }
-@media(max-width: 690px) {
-	.skillBarContainer {
-		width: 40%;
-		left: 60%;
-	}
-}
 @media(max-width: 650px) {
 	.email {
 		font-size: 120%;
 	}
 	.name{
 		margin-right: 0;
-	}
-}
-@media(max-width: 600px) {
-	.skillBarValue {
-		display: none;
-	}
-	.skillBar p {
-		color: black;
-		display:block;
-	}
-}
-@media(max-width: 570px) {
-	.skillBarContainer {
-		width: 30%;
-		left: 70%;
 	}
 }
 @media(max-width: 560px) {
@@ -737,24 +635,6 @@ filter: grayscale(1);
 @media(max-width: 550px) {
 	.aboutText {
 		font-size: 90%;
-	}
-}
-@media(max-width: 500px) {
-	.skillImage {
-		width: 50px;
-	}
-	.skillBarContainer {
-		width: 60%;
-		left: 40%;
-	}
-	.skills h3 {
-		font-size: 90%;
-	}
-}
-@media(max-width: 460px) {
-	.skillBarContainer {
-		width: 50%;
-		left: 50%;
 	}
 }
 @media(max-width: 450px) {
@@ -806,10 +686,6 @@ filter: grayscale(1);
 	.contact {
 		margin: 0;
 	}
-	.skillBarContainer {
-		width: 40%;
-		left: 60%;
-	}
 }
 @media(max-width: 370px) {
 	.greenacresBoarding {
@@ -851,12 +727,6 @@ filter: grayscale(1);
 	.linkedIn:hover,
 	.linkedIn:focus {
 		transform: scale(1);
-	}
-}
-@media(max-width: 355px) {
-	.skillBarContainer {
-		width: 40%;
-		left: 60%;
 	}
 }
 @media(max-width: 320px) {
