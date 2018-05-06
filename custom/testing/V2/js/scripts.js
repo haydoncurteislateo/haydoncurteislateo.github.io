@@ -1,5 +1,6 @@
 // PreLoader Start
     $(window).on('load', function(){
+      $("body").removeClass("stop-scrolling");
         $("#loader").fadeOut();
         $("#preLoader").delay(500).fadeOut();
     });
@@ -13,7 +14,8 @@ $(document).ready(function() {
     backgroundChange();
     h1BackgroundChange();
     scrollH4Change();
-    scrollArrowChange();
+    scrollChange();
+    scrollWheelChange();
     setTimeout(repeat,randomInterval);
   });
 
@@ -313,10 +315,14 @@ function scrollH4Change() {
   setTimeout(function(){ playScrollH4(); }, 700);
   setTimeout(function(){ stopScrollH4(); }, animationDuration + 1000);
 }
-function scrollArrowChange() {
-  document.getElementById("scrollArrow").style["animation-duration"] = animationDuration + "ms";
-  setTimeout(function(){ playScrollArrow(); }, 700);
-  setTimeout(function(){ stopScrollArrow(); }, animationDuration + 1000);
+function scrollChange() {
+  document.getElementById("scroll-btn").style["animation-duration"] = animationDuration + "ms";
+  setTimeout(function(){ playScroll(); }, 700);
+  setTimeout(function(){ stopScroll(); }, animationDuration + 1000);
+}
+function scrollWheelChange() {
+  setTimeout(function(){ playScrollWheel(); }, 700);
+  setTimeout(function(){ stopScrollWheel(); }, animationDuration + 1000);
 }
 //Background color aniamtion state $Start$
 function play() {
@@ -352,14 +358,24 @@ function stopScrollH4() {
   name.classList.remove("scrollh4play");
   name.classList.add("scrollh4stop");
 }
-function playScrollArrow() {
-  var name = document.getElementById("scrollArrow");
-  name.classList.remove("scrollarrowstop");
-  name.classList.add("scrollarrowplay");
+function playScroll() {
+  var name = document.getElementById("scroll-btn");
+  name.classList.remove("scrollstop");
+  name.classList.add("scrollplay");
 }
-function stopScrollArrow() {
-  var name = document.getElementById("scrollArrow");
-  name.classList.remove("scrollarrowplay");
-  name.classList.add("scrollarrowstop");
+function stopScroll() {
+  var name = document.getElementById("scroll-btn");
+  name.classList.remove("scrollplay");
+  name.classList.add("scrollstop");
+}
+function playScrollWheel() {
+  var name = document.getElementById("scrollWheel");
+  name.classList.remove("scrollwheelstop");
+  name.classList.add("scrollwheelplay");
+}
+function stopScrollWheel() {
+  var name = document.getElementById("scrollWheel");
+  name.classList.remove("scrollwheelplay");
+  name.classList.add("scrollwheelstop");
 }
 // Functions End

@@ -15,6 +15,10 @@ body,html {
   margin: 0;
 }
 
+.stop-scrolling {
+  overflow: hidden;
+}
+
 /* PreLoader Start */
 .preLoader {
   position: fixed;
@@ -233,28 +237,90 @@ nav a:hover {
   -ms-animation-name: none;
   animation-name: none;
 }
-
-.scroll svg {
-  transform: scale(1.6);
+@keyframes ani-mouse {
+	0% {
+	opacity: 1;
+	top: 29%;
+	}
+	15% {
+	opacity: 1;
+	top: 50%;
+	}
+	50% {
+	opacity: 0;
+	top: 50%;
+	}
+	100% {
+	opacity: 0;
+	top: 29%;
+	}
 }
-.scrollArrow {
-  fill: #ffffff;
-  animation-name: scrollArrowChange;
+.scroll-btn > * {
+ display: inline-block;
+ line-height: 18px;
+ font-size: 13px;
+ font-weight: normal;
+ color: #7f8c8d;
+ color: #ffffff;
+}
+.scroll-btn > *:hover,
+.scroll-btn > *:focus,
+.scroll-btn > *.active {
+ color: #ffffff;
+}
+.scroll-btn > *:hover,
+.scroll-btn > *:focus,
+.scroll-btn > *:active,
+.scroll-btn > *.active {
+ opacity: 0.8;
+ filter: alpha(opacity=80);
+}
+.mouse {
+	position: relative;
+	display: block;
+	width: 35px;
+	height: 55px;
+	margin: 0 auto 20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 3px solid white;
+	border-radius: 23px;
+  animation-name: scrollChange;
   animation-play-state: paused;
 }
-@keyframes scrollArrowChange {
-    0% {fill:#ffffff;}
-    50% {fill:#000000;}
-    100% {fill:#ffffff;}
+.scrollWheel {
+	position: absolute;
+	display: block;
+	top: 29%;
+	left: 50%;
+	width: 8px;
+	height: 8px;
+	margin: -4px 0 0 -4px;
+	background: white;
+	border-radius: 50%;
+	animation: ani-mouse 2.5s linear infinite;
 }
-.scrollarrowplay {
+@keyframes scrollChange {
+    0% {border-color: white;}
+    50% {border-color: black;}
+    100% {border-color: white;}
+}
+.scrollplay {
   animation-play-state: running;
 }
-.scrollarrowstop {
+.scrollstop {
   -moz-animation-name: none;
   -webkit-animation-name: none;
   -ms-animation-name: none;
   animation-name: none;
+}
+
+.scrollwheelplay {
+  background-color: #000000;
+}
+.scrollwheelstop {
+  background-color: #ffffff;
 }
 
 /*Landing Screen Finish*/
@@ -330,7 +396,7 @@ nav a:hover {
 	background-color: black;
 }
 .greenacresImage {
-	background-image: url(../images/woodland1.jpeg);
+	background-image: url(../images/sideofdogface.jpg);
 	background-size: cover;
 	background-position: center top;
 	margin: auto;
@@ -338,7 +404,7 @@ nav a:hover {
 	width: 100%;
 }
 .v1Image {
-	background-image: url(../images/countryside.jpeg);
+	background-image: url(../images/productCover.jpg);
 	background-size: cover;
 	background-position: center top;
 	margin: auto;
