@@ -379,10 +379,10 @@ nav a:hover {
 	min-width: 310px;
 	min-height: 480px;
 }
-.greenacresBoarding {
+.juniperMagazine {
 	margin-top: 50%;
 }
-.v1 {
+.example2 {
 	margin-top: 60%;
 	margin-left: -15vw;
 	margin-bottom: 80%;
@@ -395,7 +395,7 @@ nav a:hover {
 	height: 100%;
 	background-color: black;
 }
-.greenacresImage {
+.example2Image {
 	background-image: url(../images/sideofdogface.jpg);
 	background-size: cover;
 	background-position: center top;
@@ -403,7 +403,7 @@ nav a:hover {
 	height: 100%;
 	width: 100%;
 }
-.v1Image {
+.juniperMagazineImage {
 	background-image: url(../images/productCover.jpg);
 	background-size: cover;
 	background-position: center top;
@@ -704,6 +704,9 @@ nav a:hover {
 	}
 }
 @media(max-width: 450px) {
+.showMenu {
+	margin-left: 1px;
+}
 .portfolioHeader {
 	width: 1vw;
 	font-size: 200%;

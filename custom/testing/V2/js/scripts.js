@@ -81,7 +81,7 @@ $(document).ready(function() {
   var titleBWidth = [];
   var titleBCover = [];
 
-  for (var b = 1; b < 4; b++) {
+  for (var b = 1; b < 3; b++) {
   title[b] = $("#title"+b);
   titlePosTop[b] = title[b].position().top+5;
   titleHeight[b] = title[b].outerHeight();
@@ -106,7 +106,7 @@ $(document).ready(function() {
 
   function elementsReveal() {
     portfolioImageCover[i].animate({width: "0"}, 600);
-     for (var x = 1; x < 4 ; x++) {
+     for (var x = 1; x < 3 ; x++) {
        title[x].delay(x*100).animate({"margin-left": "0"}, 100);
        titleCover[x].delay(x*100).animate({"margin-left": "0"}, 100);
        titleCover[x].delay(x*100).animate({"width": "0"}, 100);
@@ -274,26 +274,6 @@ var navOpen = false;
       }
     });
 
-});
-
-
-  // Change browser title on leaving
-$(function() {
-  var message = "👀";
-  var original;
-
-  $(window).focus(function() {
-    if (original) {
-      document.title = original;
-    }
-  })
-  .blur(function() {
-    var title = $('title').text();
-    if (title != message) {
-      original = title;
-    }
-    document.title = message;
-  });
 });
 
 // Functions Start
