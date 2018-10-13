@@ -357,7 +357,7 @@ header a {
     position: relative;
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
     width: 100%;
 }
@@ -373,7 +373,8 @@ header a {
     color: #171717;
 }
 .aboutImage {
-    max-width: 50%;
+    max-width: 100%;
+    width: 250%;
     box-shadow: 5px 5px 20px rgb(0, 0, 0, 0.25);
     margin-right: 50px;
 }
