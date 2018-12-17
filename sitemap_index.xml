@@ -7,38 +7,31 @@
 
   <sitemap>
     <loc>https://haydon-cl.tk/</loc>
-      <changefreq>monthly</changefreq>
-      <priority>1.00</priority>
-      <lastmod>2018-12-17</lastmod>
+    <lastmod>2018-12-17</lastmod>
   </sitemap>
 
     <sitemap>
       <loc>https://haydon-cl.tk/media/</loc>
-      <priority>0.90</priority>
       <lastmod>2018-12-17</lastmod>
     </sitemap>
 
       <sitemap>
         <loc>https://haydon-cl.tk/projects/juniper_magazine/</loc>
-        <priority>0.80</priority>
         <lastmod>2018-12-17</lastmod>
       </sitemap>
 
       <sitemap>
         <loc>https://haydon-cl.tk/V1/</loc>
-        <priority>0.80</priority>
         <lastmod>2018-12-17</lastmod>
       </sitemap>
 
       <sitemap>
         <loc>https://haydon-cl.tk/V2/</loc>
-        <priority>0.80</priority>
         <lastmod>2018-12-17</lastmod>
       </sitemap>
 
         <sitemap>
           <loc>https://haydon-cl.tk/media/games/brackeysTutorial</loc>
-          <priority>0.70</priority>
           <lastmod>2018-12-17</lastmod>
         </sitemap>
 

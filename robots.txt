@@ -6,6 +6,4 @@
     User-agent: *
     Disallow: https://haydon-cl.tk/portfolio/
 
-
-
 Sitemap: https://haydon-cl.tk/sitemap_index.xml
