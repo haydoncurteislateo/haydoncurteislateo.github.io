@@ -1,7 +1,7 @@
 # Rule 1
     User-agent: *
-    allow: https://haydon-cl.tk/
-    
+    Allow: /
+
 # Rule 2
     User-agent: *
     Disallow: https://haydon-cl.tk/portfolio/
