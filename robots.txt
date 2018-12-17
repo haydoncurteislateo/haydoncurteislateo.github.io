@@ -1,5 +1,5 @@
 # Rule 1
-User-agent: *
-Disallow: https://haydon-cl.tk/portfolio/portfolio.html
+    User-agent: *
+    Disallow: https://haydon-cl.tk/portfolio/portfolio.html
 
 Sitemap: https://haydon-cl.tk/sitemap_index.xml
