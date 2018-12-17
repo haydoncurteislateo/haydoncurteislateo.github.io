@@ -1,34 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
-  <loc>https://haydon-cl.tk/</loc>
-  <lastmod>2018-10-14T13:14:19+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://haydon-cl.tk/projects/juniper_magazine/</loc>
-  <lastmod>2018-10-14T13:14:19+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://haydon-cl.tk/media/</loc>
-  <lastmod>2018-12-17</lastmod>
-  <priority>0.90</priority>
-</url>
-<url>
-  <loc>https://haydon-cl.tk/media/games/brackeysTutorial</loc>
-  <lastmod>2018-12-17</lastmod>
-  <priority>0.70</priority>
-</url>
-<url>
-  <loc>https://haydon-cl.tk/V1/</loc>
-  <lastmod>2018-12-17</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://haydon-cl.tk/V2/</loc>
-  <lastmod>2018-12-17</lastmod>
-  <priority>0.80</priority>
-</url>
-</urlset>
+<sitemapindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/siteindex.xsd"
+
+         xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">>
+
+  <sitemap>
+    <loc>https://haydon-cl.tk/</loc>
+      <changefreq>monthly</changefreq>
+      <priority>1.00</priority>
+      <lastmod>2018-12-17</lastmod>
+  </sitemap>
+
+    <sitemap>
+      <loc>https://haydon-cl.tk/media/</loc>
+      <priority>0.90</priority>
+      <lastmod>2018-12-17</lastmod>
+    </sitemap>
+
+      <sitemap>
+        <loc>https://haydon-cl.tk/projects/juniper_magazine/</loc>
+        <priority>0.80</priority>
+        <lastmod>2018-12-17</lastmod>
+      </sitemap>
+
+      <sitemap>
+        <loc>https://haydon-cl.tk/V1/</loc>
+        <priority>0.80</priority>
+        <lastmod>2018-12-17</lastmod>
+      </sitemap>
+
+      <sitemap>
+        <loc>https://haydon-cl.tk/V2/</loc>
+        <priority>0.80</priority>
+        <lastmod>2018-12-17</lastmod>
+      </sitemap>
+
+        <sitemap>
+          <loc>https://haydon-cl.tk/media/games/brackeysTutorial</loc>
+          <priority>0.70</priority>
+          <lastmod>2018-12-17</lastmod>
+        </sitemap>
+
+</sitemapindex>
