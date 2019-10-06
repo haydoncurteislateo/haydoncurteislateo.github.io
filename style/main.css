@@ -225,7 +225,7 @@ header a {
     background-color: #171717;
     padding: 0 35px;
     border-radius: 0 5px 5px 5px;
-    box-shadow: 5px 5px 8px rgb(0, 0, 0, 0.25);
+    box-shadow: 3px 3px 10px rgb(0, 0, 0, 0.25);
     transition: 250ms ease-in-out;
     text-decoration: none;
 }
@@ -251,9 +251,7 @@ header a {
 
 .homeAvailability:hover, .homeAvailability:focus {
     background-color: #A47D00;
-    box-shadow: 5px 6px 5px rgb(0, 0, 0, 0.75);
-    transform: translate(1px ,2px);
-    transform: scale(0.97);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
 }
 
 /* Home End */
